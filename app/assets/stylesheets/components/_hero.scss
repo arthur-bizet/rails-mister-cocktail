@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  margin-top: 80px;
+  padding: 40px;
+  /*background-color: blue;*/
+}
+
+.hero h1 {
+  font-family: 'Lato', 'sans-serif';
+  font-weight: 900;
+  font-size: 56px;
+}
+
+.hero_text {
+  padding: 40px;
+}
+
+.hero_text p {
+  padding-top: 24px;
+  color: darkgrey;
+}
+
+.hero img {
+  height: 300px;
+  border-radius: 12px;
+}
