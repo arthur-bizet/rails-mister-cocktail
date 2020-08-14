@@ -10,7 +10,7 @@
   <div class="grid">
     <% @cocktails.each do |cocktail| %>
       <div class="cards"><%= link_to cocktail.name, cocktail_path(cocktail) %></div>
-      <div class="delete_button"><%= link_to "Delete", cocktail_path(cocktail), method: :delete%></div>
+      <!--<div class="delete_button"><%= link_to "Delete", cocktail_path(cocktail), method: :delete%></div>-->
     <% end %>
   </div>
 
