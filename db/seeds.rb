@@ -10,6 +10,12 @@ puts "Creating some cocktails..."
 end
 puts "Created #{Cocktail.count} cocktails"
 
-Ingredient.create(name: 'lemon')
-Ingredient.create(name: 'ice')
-Ingredient.create(name: 'mint leaves')
+Ingredient.destroy_all
+puts "Creating some ingredients..."
+10.times do
+  ingredient = Ingredient.create(
+    name: Faker::Food
+    )
+  puts "Ingredient with id #{ingredient.id} was created"
+end
+puts "Created #{Ingredient.count} ingredients"
