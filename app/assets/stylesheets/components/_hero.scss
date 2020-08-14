@@ -1,6 +1,12 @@
+
+.container {
+  position: sticky;
+  top-margin: 0;
+}
+
 .hero {
   display: flex;
-  margin-top: 80px;
+  margin-top: 64px;
   padding: 40px;
   /*background-color: blue;*/
 }
@@ -12,7 +18,7 @@
 }
 
 .hero_text {
-  padding: 40px;
+  padding-left: 0px;
 }
 
 .hero_text p {
@@ -24,3 +30,21 @@
   height: 300px;
   border-radius: 12px;
 }
+
+body {
+  position: sticky;
+}
+
+#wave {
+  position: absolute;
+  top: -800px;
+  left: -200px;
+  right: 0px;
+  height: 1200px;
+  width: 1200px;
+  background: #fbe0dc;
+  border-radius: 2000px;
+  z-index: -1;
+}
+
+

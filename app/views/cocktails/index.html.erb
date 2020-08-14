@@ -1,3 +1,4 @@
+<div id="wave"></div>
 <div class="container">
   <div class="hero">
     <div class="hero_text">
@@ -6,12 +7,12 @@
     </div>
     <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="Yum">
   </div>
+  <div class="grid">
+    <% @cocktails.each do |cocktail| %>
+      <div class="cards"><%= link_to cocktail.name, cocktail_path(cocktail) %></div>
+      <div class="delete_button"><%= link_to "Delete", cocktail_path(cocktail), method: :delete%></div>
+    <% end %>
+  </div>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-  <div><li><%= link_to cocktail.name, cocktail_path(cocktail) %> | <%= link_to "Delete", cocktail_path(cocktail), method: :delete%></li></div>
-  <% end %>
-</ul>
-
-<%= link_to "Create Cocktail", new_cocktail_path(@cocktail) %>
+<div class ="create_button"><%= link_to "Create Cocktail", new_cocktail_path(@cocktail) %></div>
 </div>
