@@ -12,9 +12,9 @@ puts "Created #{Cocktail.count} cocktails"
 
 Ingredient.destroy_all
 puts "Creating some ingredients..."
-10.times do
+11.times do
   ingredient = Ingredient.create(
-    name: Faker::Food
+    name: ["strawberry", "whiskey", "gin", "mint", "ice", "coffee liquor", "aperol", "lemonade", "coke", "cucumber", "vodka", "ginger ale"].sample
     )
   puts "Ingredient with id #{ingredient.id} was created"
 end
