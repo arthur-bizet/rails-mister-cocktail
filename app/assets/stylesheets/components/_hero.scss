@@ -4,6 +4,10 @@
   top-margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .hero {
   display: flex;
   margin-top: 64px;
@@ -47,13 +51,27 @@ body {
   z-index: -1;
 }
 
-.create_button {
-  margin-top: 20px;
+.create_button a {
   padding: 8px 24px;
+  background-color: black;
+  // text-align: center !important;
+  // vertical-align: middle !important;
+  // cursor: pointer !important;
+  text-decoration: none;
+  border-radius: 8px;
+  // width: 180px !important;
+  // border-style: solid 1px, black !important;
+   box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.create_button {
+  margin-top: 40px;
+}
+
+.create_button a:hover {
   background-color: #34e3df;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 
